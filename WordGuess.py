@@ -21,7 +21,8 @@ def loadList(fileloc):
 
 #Loading and getting input
 WList = loadList("WordList")
-Av = input("Input available letters: ")
+Av = list(input("Input available letters: "))
+Av.sort()
 
 #Da smartie bits appends uniques
 comb = []
